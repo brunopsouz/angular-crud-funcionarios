@@ -1,6 +1,7 @@
 <div class="funcionario-box">
     <div class="input-box">
         <label>Procurar:</label>
+        <input type="text" placeholder="Qual registro está buscando?" (input)="search($event)" >
     </div>
 </div>
 
@@ -15,11 +16,17 @@
             <th></th>
         </tr>
     </thead>
-    <tbody *ngFor="let funcionario of funcionarios">
-        <tr>
-
+    <tbody>
+        <tr *ngFor="let funcionario of funcionarios">
             <td>
-                <img src="assets\images\nok.png" alt="" style="height: 20px; width: 20px;">
+                <div *ngIf="funcionario.ativo == true; else inativo">
+                    <img src="assets/images/ok.png" alt="" style="height: 20px; width: 20px">
+                </div>
+
+                <ng-template #inativo>
+                    <img src="assets/images/nok.png" alt="" style="height: 20px; width: 20px">
+                </ng-template>
+
             </td>
             <td>{{ funcionario.nome }}</td>
             <td>{{ funcionario.sobrenome }}</td>
