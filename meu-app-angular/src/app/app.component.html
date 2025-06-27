@@ -3,7 +3,9 @@
 
   <p>{{title}}</p>
 
-    <app-home>aa</app-home>
+  <a [routerLink]="['/pages/home']" routerLinkActive="router-link-active">
+    <button>Cadastrar novo Funcionário</button>
+  </a>
 
   <router-outlet />
   
