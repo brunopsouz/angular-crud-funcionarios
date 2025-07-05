@@ -50,14 +50,14 @@ Este é um projeto com fins educacionais, desenvolvido como parte do aprendizado
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/angular-crud-funcionarios.git
+git clone https://github.com/brunopsouz/angular-crud-funcionarios.git
 
 # Acesse a pasta
 cd angular-crud-funcionarios
 
-# Atualize a string de conexão no appsettings.json (se necessário)
+# Atualize a string de conexão no appsettings.json
 
-# Rode as migrations (caso ainda não tenha o banco criado)
+# Rode as migrations
 dotnet ef database update
 
 # Inicie a aplicação
