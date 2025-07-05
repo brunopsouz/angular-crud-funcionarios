@@ -2,8 +2,7 @@
 ----
 ## Cadastro de Funcionarios
 
-Este é um projeto com fins educacionais, desenvolvido como parte do aprendizado de tecnologias modernas para web.  
-O sistema consiste em uma API REST com backend em **.NET 8.0**, conectada a um banco de dados **SQL Server**, e consumida por uma aplicação frontend Angular.
+Este é um projeto com fins educacionais, desenvolvido como parte do aprendizado de tecnologias modernas para web. O sistema consiste em uma API REST com backend em **.NET 8.0**, conectada a um banco de dados **SQL Server**, e consumida por uma aplicação frontend Angular.
 
 ---
 
